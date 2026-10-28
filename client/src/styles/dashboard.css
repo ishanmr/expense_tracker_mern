@@ -1,0 +1,224 @@
+/* Dashboard Layout */
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Metric Cards Row */
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Dark Navy Card (Reference UI) */
+.metric-card-dark {
+  background-color: var(--bg-dark-card);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px -5px rgba(28, 53, 94, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card-dark .metric-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.metric-card-dark .metric-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.metric-card-dark .metric-subtext {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-top: 0.4rem;
+}
+
+.card-badge-icon {
+  background: rgba(255, 255, 255, 0.12);
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Light Blue Card (Reference UI) */
+.metric-card-light {
+  background-color: var(--bg-light-blue);
+  color: var(--text-main);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 8px 20px -6px rgba(37, 99, 235, 0.08);
+}
+
+.metric-card-light .metric-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.metric-card-light .metric-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: var(--primary-blue);
+}
+
+.metric-card-light .metric-subtext {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 0.4rem;
+}
+
+.card-badge-icon-blue {
+  background: #ffffff;
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.12);
+  flex-shrink: 0;
+}
+
+/* White Metric Cards */
+.metric-card-white {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.metric-card-white .metric-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.metric-card-white .metric-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Charts & Breakdown Row */
+.charts-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f2445;
+}
+
+/* Recent Transaction Card (Matching Image 1) */
+.recent-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.table-clean {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-clean th {
+  text-align: left;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+.table-clean td {
+  padding: 1.1rem 1.25rem;
+  font-size: 0.95rem;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table-clean tr:last-child td {
+  border-bottom: none;
+}
+
+.table-amount {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.view-all-link {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background-color: #f1f5f9;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+}

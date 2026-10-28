@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bg-main: #f3f6fa;
+  --bg-card: #ffffff;
+  --bg-dark-card: #1c355e;
+  --bg-light-blue: #d9e8fb;
+  --primary-blue: #2563eb;
+  --primary-dark: #164e87;
+  --primary-hover: #1d4ed8;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --border-color: #e2e8f0;
+  --border-light: #edf2f7;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 25px -3px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
